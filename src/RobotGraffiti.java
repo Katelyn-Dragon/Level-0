@@ -31,5 +31,6 @@ public static void main(String[] args) {
 	Chappie.move(200);
 	Chappie.turn(-20);
 	Chappie.move(50);
+	Chappie.turn();
 }
 }
