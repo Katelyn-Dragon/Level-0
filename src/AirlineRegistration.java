@@ -23,12 +23,12 @@ public class AirlineRegistration {
 	public static void main(String[] args) {
 		
 	
-	String name = JOptionPane.showInputDialog("For security reasons we want to know your first name");
-String Lastname = JOptionPane.showInputDialog("What is your last name");
-String destination = JOptionPane.showInputDialog("Where are you flying to? I'm sure you won't get mugged hehehehehehe");
-String DOB = JOptionPane.showInputDialog("We also need your Birthdate huehuehuehuehuehue");
+	String name = JOptionPane.showInputDialog("Thank you for choosing MTT airlines, for security reasons we want to know your first name.");
+String Lastname = JOptionPane.showInputDialog("We will also need to know your last name.");
+String destination = JOptionPane.showInputDialog("What is your destination? I'm sure you won't get mugged.");
+String DOB = JOptionPane.showInputDialog("We need your need your Birthdate too.");
 String gender = JOptionPane.showInputDialog("Are you Male, Female,Transgender, or Tyler Oakley?");
-JOptionPane.showInputDialog("Alright so if I am correct, your first name is " + name+ "\n Last name " + Lastname+ "\n destination is " +destination+ "\n and your Birthdate is " + DOB);
+JOptionPane.showInputDialog("Alright so if I am correct, your first name is " + name+ "\n ,Your last name " + Lastname+ "\n ,destination is " +destination+ "\n ,and your Birthdate is " + DOB);
 JOptionPane.showMessageDialog(null, "I am the hacker known as 4chan you idiot! I WILL RULE THE WORLD WITH YOUR CREDIT CARD! HUEHUEHUEHUEHUE!");
 
 	}

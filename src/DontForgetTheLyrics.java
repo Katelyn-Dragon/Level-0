@@ -25,6 +25,8 @@ JOptionPane.showMessageDialog(null, " For this game, we'll play the start of a s
 
 			// 7. If they answered correctly, tell them that they were right.
 
+	
+
 			// 8. Otherwise, tell them they are wrong, and give them the answer.
 
 			// 9. Record another sound and repeat steps 5-8.
