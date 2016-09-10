@@ -28,7 +28,7 @@ String Lastname = JOptionPane.showInputDialog("We will also need to know your la
 String destination = JOptionPane.showInputDialog("What is your destination? I'm sure you won't get mugged.");
 String DOB = JOptionPane.showInputDialog("We need your need your Birthdate too.");
 String gender = JOptionPane.showInputDialog("Are you Male, Female,Transgender, or Tyler Oakley?");
-JOptionPane.showInputDialog("Alright so if I am correct, your first name is " + name+ "\n ,Your last name " + Lastname+ "\n ,destination is " +destination+ "\n ,and your Birthdate is " + DOB);
+JOptionPane.showInputDialog("Alright so if I am correct, your first name is " + name+ "\n Your last name " + Lastname+ "\n destination is " +destination+ "\n and your Birthdate is " + DOB);
 JOptionPane.showMessageDialog(null, "I am the hacker known as 4chan you idiot! I WILL RULE THE WORLD WITH YOUR CREDIT CARD! HUEHUEHUEHUEHUE!");
 
 	}
