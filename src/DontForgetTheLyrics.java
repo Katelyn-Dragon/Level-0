@@ -18,7 +18,7 @@
 		
 		public static void main(String[] args) {
 			// 4. Make a pop-up to explain the game.
-
+JOptionPane.showMessageDialog(null, " For this game, we'll play the start of a song, and the player has to guess the rest of the lyrics.");
 			// 5. Use the playSound method to play your song.
 
 			// 6. Make a pop-up for the player to type their answer.

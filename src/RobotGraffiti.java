@@ -31,6 +31,11 @@ public static void main(String[] args) {
 	Chappie.move(200);
 	Chappie.turn(-20);
 	Chappie.move(50);
-	Chappie.turn();
+	Chappie.turn(-50);
+	Chappie.move(100);
+	Chappie.turn(-20);
+	Chappie.move(260);
+	Chappie.turn(-70);
+	Chappie.move(50);
 }
 }
