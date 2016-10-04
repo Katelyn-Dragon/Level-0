@@ -18,7 +18,7 @@
 			 int answer2 = JOptionPane.showConfirmDialog(null, "Is it a vacation?");
 			if (answer2==JOptionPane.NO_OPTION) {
 				isVacation = false;
-				System.out.println("GET UP LAZYBONES!");
+				System.out.println("GET UP LAZY BONES!");
 			
 			}	
 			else {
@@ -31,12 +31,12 @@
 			}
 			else {
 				isVacation = true;
-				System.out.println("GET UP LAZYBONES!");
+				System.out.println("GET UP LAZY BONES!");
 			}
 
 			
 			 /*Print “sleep in” if it is a vacation or a weekend. If it’s a weekday,
-			 * print “get up lazybones!” If it is a weekday, and we are on vacation,
+			 * print “get up lazy bones!” If it is a weekday, and we are on vacation,
 			 * print “sleep in”.
 			*/
 			
