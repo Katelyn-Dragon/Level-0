@@ -25,7 +25,7 @@ int secondanswer = Integer.parseInt(answer);
 			// Calculate how much money the user has and save it in a double variable 
 double coins = secondanswer + newdimes + newquarters;
 			// Tell the user how much money they have
-JOptionPane.showMessageDialog(null, "You have"  double coins);
+
 		}
 	}
 
