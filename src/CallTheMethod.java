@@ -30,7 +30,7 @@ public class CallTheMethod {
 		//*. Call the printEntireEnglishDictionary method
 		printEntireEnglishDictionary();
 		//*. Call the reverseString method and print the results to the screen
-		String y = reverseString("");
+		String y = reverseString("Hi");
 		System.out.println(y);
 		//*. Call the showASurprise method
 		showASurprise();
