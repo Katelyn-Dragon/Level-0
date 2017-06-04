@@ -1,37 +1,44 @@
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.InetAddress;
-import java.net.Socket;
-import java.net.UnknownHostException;
 
-public class Client {
+public class HttpClientTutorial {
 
-	final static String INET_ADDR = "rpi5";
-	final static int PORT = 8000;
+	private static String url = "http://www.apache.org/";
 
-	public static void main(String[] args) throws UnknownHostException {
-		// Get the multicast address that we are going to connect to.
-		InetAddress address = InetAddress.getByName(INET_ADDR);
+	public static void main(String[] args) {
+		// Create an instance of HttpClient.
+		HttpClient client = new HttpClient();
 
-		// Create a buffer of bytes, which will be used to store
-		// the incoming bytes containing the information from the streaming
-		// server
-		byte[] buffer = new byte[256];
+		// Create a method instance.
+		GetMethod method = new GetMethod(url);
 
-		// Create a new Multicast socket so we can join the multicast group
-		try (Socket clientSocket = new Socket()) {
-			// Joint the Multicast group.
-			InputStream data = clientSocket.getInputStream();
+		// Provide custom retry handler is necessary
+		method.getParams().setParameter(HttpMethodParams.RETRY_HANDLER, new DefaultHttpMethodRetryHandler(3, false));
 
-			// do an infinite loop
-			while (true) {
-				// Receive the information and print it.
-				int a = data.read();
+		try {
+			// Execute the method.
+			int statusCode = client.executeMethod(method);
 
-				System.out.println("Data ->  " + data);
+			if (statusCode != HttpStatus.SC_OK) {
+				System.err.println("Method failed: " + method.getStatusLine());
 			}
-		} catch (IOException exception) {
-			exception.printStackTrace();
+
+			// Read the response body.
+			byte[] responseBody = method.getResponseBody();
+
+			// Deal with the response.
+			// Use caution: ensure correct character encoding and is not binary
+			// data
+			System.out.println(new String(responseBody));
+
+		} catch (HttpException e) {
+			System.err.println("Fatal protocol violation: " + e.getMessage());
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.err.println("Fatal transport error: " + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			// Release the connection.
+			method.releaseConnection();
 		}
 	}
 }
