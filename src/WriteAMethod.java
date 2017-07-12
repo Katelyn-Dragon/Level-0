@@ -12,9 +12,9 @@ static void iRock(String B){
 static int Age(int age){
 	return 2017 - age;
 }
-static void repeatString(String JHope,int Suga){
-	for (int i = 0; i < Suga; i++) {
-		System.out.println(JHope);
+static void repeatString(String J,int S){
+	for (int i = 0; i < S; i++) {
+		System.out.println(J);
 }
 }
 }
