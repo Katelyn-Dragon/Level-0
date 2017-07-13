@@ -12,9 +12,9 @@ public class Prime {
 			}
 		}
 		if (isPrime) {
-			System.out.println("prime");
+			System.out.println("Prime");
 		} else {
-			System.out.println("not prime");
+			System.out.println("Not Prime");
 		}
 	}
 }

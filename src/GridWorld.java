@@ -19,6 +19,7 @@ public class GridWorld {
 		int c = new Random().nextInt(10);
 		int n = new Random().nextInt(10);
 		int l = new Random().nextInt(10);
+		int z = new Random().nextInt(10);
 		Location location = new Location(r, d);
 		Location location1 = new Location(j, k);
 		Location location2 = new Location(g, e);
@@ -26,6 +27,7 @@ public class GridWorld {
 		Location location4 = new Location(e, c);
 		Location location5 = new Location(r, k);
 		Location location6 = new Location(n, l);
+		Location location7 = new Location(g, z);
 		Actor Bug = new Actor();
 		Actor Flower = new Actor();
 		Bug b = new Bug();
@@ -41,5 +43,6 @@ public class GridWorld {
 		world.add(location4, f);
 		world.add(location5, b);
 		world.add(location6, f);
+		world.add(location6, b);
 	}
 }
